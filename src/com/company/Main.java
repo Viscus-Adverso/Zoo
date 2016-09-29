@@ -21,6 +21,30 @@ public class Main {
         String name = scanner.nextLine();
         Animal a = createAnimal(name);
         System.out.println(a);
+
+        //anonymous classes
+
+        Mammal d2 = new Mammal() {
+            @Override
+            void makeSound() {
+                System.out.println("Bark!");
+            }
+        };
+
+        Bird h2 =new Bird() {
+            @Override
+            void makeSound() {
+                System.out.println("Caww!");
+            }
+        };
+
+        Reptile s2 = new Reptile() {
+            @Override
+            void makeSound() {
+                System.out.println("Hissssssssssssssss!");
+            }
+        };
+
     }
 
 
